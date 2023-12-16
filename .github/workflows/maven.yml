@@ -10,12 +10,14 @@ name: Java CI with Maven
 
 on:
   push:
+    paths: 
+          - 'src/**'
+          - 'pom.xml'
+          - '.github/workflows/maven.yml'
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-  paths:
-    - 'src/**'
-    - 'pom.xml'
+
 
 jobs:
   build:
