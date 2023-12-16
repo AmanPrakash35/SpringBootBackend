@@ -10,10 +10,6 @@ name: Java CI with Maven
 
 on:
   push:
-    paths: 
-          - 'src/**'
-          - 'SpringBootBackend/pom.xml'
-          - '.github/workflows/maven.yml'
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
